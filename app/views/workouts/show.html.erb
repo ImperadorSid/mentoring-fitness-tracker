@@ -1,0 +1,12 @@
+<h1>Training details</h1>
+<p><strong>Name:</strong> <%= @workout.name %></p>
+<p><strong>Date:</strong> <%= @workout.date %></p>
+<h2>Sets</h2>
+<ul>
+  <% @workout.training_sets.each do |set| %>
+    <li>
+      <p><strong>Exercise:</strong> <%= set.exercise.name %></p>
+      <%= set.repetitions %> repeated <%= set.weight %> kg
+    </li>
+  <% end %>
+</ul>
