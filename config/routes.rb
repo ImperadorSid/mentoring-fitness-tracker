@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   resources :exercises
 
-  root "home#index"
+  get '/app', to: 'home#index'
+
+  root 'home#index'
 end
