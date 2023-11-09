@@ -1,17 +1,28 @@
 <%= form_with(model: [@workout, @training_set], local: true) do |form| %>
+  <%= form.hidden_field :workout_id, value: @workout.id %>
   <div class="field">
     <%= form.label :exercise_id, 'Exercise' %>
+    <br>
     <%= form.collection_select :exercise_id, Exercise.all, :id, :name %>
+    <br>
   </div>
+  <br>
   <div class="field">
     <%= form.label :repetitions %>
+    <br>
     <%= form.number_field :repetitions %>
+    <br>
   </div>
+  <br>
   <div class="field">
     <%= form.label :weight %>
+    <br>
     <%= form.number_field :weight %>
+    <br>
   </div>
+  <br>
   <div class="actions">
+    <br>
     <%= form.submit %>
   </div>
 <% end %>

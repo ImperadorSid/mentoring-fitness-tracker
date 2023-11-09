@@ -1,6 +1,7 @@
-<h1>My training</h1>
-<ul>
-  <% @workouts&.each do |workout| %>
-    <li><%= link_to workout.name.blank? ? workout.date : "#{workout.date}(#{workout.name})", workout %></li>
-  <% end %>
-</ul>
+<h3>My training</h3>
+<%= link_to 'Create workout', new_workout_path, type: "button", class:"btn btn-outline-secondary" %>
+<br><br>
+<% @workouts&.each do |workout| %>
+  <p><%= link_to workout.name.blank? ? workout.date : "#{workout.date}(#{workout.name})", workout %></p>
+<% end %>
+<br>

@@ -10,7 +10,7 @@ class TrainingSetsController < ApplicationController
 
   def create
     @training_set = @workout.training_sets.build(set_params)
-    if @training_sets.save
+    if @training_set.save
       redirect_to @workout, notice: 'The set was created successfully.'
     else
       render 'new'
@@ -39,10 +39,10 @@ class TrainingSetsController < ApplicationController
   private
 
   def set_params
-    params.require(:training_sets).permit(:exercise_id, :repetitions, :weight)
+    params.require(:training_set).permit(:exercise_id, :repetitions, :weight)
   end
 
   def find_workout
-    @workout = current_user.workouts.find_by_id(params[:workout_id])
+    @workout = current_user.workouts.includes(:training_sets).find(params['workout_id'])
   end
 end

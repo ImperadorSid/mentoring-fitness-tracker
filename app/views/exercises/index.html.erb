@@ -1,6 +1,7 @@
-<h1>List of exercises</h1>
-<ul>
-  <% @exercises.each do |exercise| %>
-    <li><%= link_to exercise.name, exercise %></li>
-  <% end %>
-</ul>
+<h3>List of exercises</h3>
+<%= link_to 'Create new exercise', new_exercise_path, method: :get, type: "button", class:"btn btn-outline-secondary" %>
+<br><br>
+<% @exercises.each do |exercise| %>
+  <p><%= link_to exercise.name, exercise %></p>
+<% end %>
+

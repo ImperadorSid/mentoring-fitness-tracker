@@ -1,3 +1,4 @@
-<h1>Exercise details</h1>
+<h3>Exercise details</h3>
 <p><strong>Name:</strong> <%= @exercise.name %></p>
 <p><strong>Description:</strong> <%= @exercise.description %></p>
+<%= link_to 'Edit exercise', edit_exercise_path(@exercise), type: "button", class:"btn btn-outline-secondary" %>

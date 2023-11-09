@@ -1,13 +1,20 @@
 <%= form_with(model: @workout, local: true) do |form| %>
   <div class="field">
     <%= form.label :name %>
+    <br>
     <%= form.text_field :name %>
+    <br>
   </div>
+  <br>
   <div class="field">
     <%= form.label :date %>
+    <br>
     <%= form.date_field :date %>
+    <br>
   </div>
+  <br>
   <div class="actions">
+    <br>
     <%= form.submit %>
   </div>
 <% end %>
