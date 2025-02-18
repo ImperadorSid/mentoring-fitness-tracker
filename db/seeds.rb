@@ -1,7 +1,46 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+
+# default exercises
+Exercise.create([
+                  { name: 'Bench Press',
+                    description: 'Bench presses are a key exercise for building chest, shoulder, and tricep strength.' },
+                  { name: 'Bicep Curl',
+                    description: 'Bicep curls are an isolation exercise that focuses on building arm strength.' },
+                  { name: 'Bicycle Crunch',
+                    description: 'Bicycle crunches are a core exercise that targets the abdominal muscles.' },
+                  { name: 'Burpee',
+                    description: 'Burpees are a full-body exercise that combines strength and cardio training.' },
+                  { name: 'Calf Raise',
+                    description: 'Calf raises are an isolation exercise that targets the calf muscles.' },
+                  { name: 'Deadlift',
+                    description: 'Deadlifts are a compound exercise that targets the back, glutes, and hamstrings.' },
+                  { name: 'Glute Bridge',
+                    description: 'Glute bridges are an exercise that targets the glutes and lower back.' },
+                  { name: 'High Knees',
+                    description: 'High knees are a cardio exercise that also strengthens the legs and core.' },
+                  { name: 'Jumping Jack',
+                    description: 'Jumping jacks are a full-body cardio exercise that increases heart rate.' },
+                  { name: 'Leg Raise',
+                    description: 'Leg raises are a core exercise that targets the lower abdominal muscles.' },
+                  { name: 'Lunge',
+                    description: 'Lunges are excellent for working the legs and glutes, improving balance and coordination.' },
+                  { name: 'Mountain Climber',
+                    description: 'Mountain climbers are a cardio exercise that also strengthens the core and legs.' },
+                  { name: 'Plank',
+                    description: 'Planks are a core exercise that strengthens the abdominal muscles and lower back.' },
+                  { name: 'Pullup',
+                    description: 'Pullups are a challenging exercise that targets the back, shoulders, and biceps.' },
+                  { name: 'Pushup',
+                    description: 'Pushups are a great exercise for the chest, shoulders, and triceps.' },
+                  { name: 'Russian Twist',
+                    description: 'Russian twists are a core exercise that targets the oblique muscles.' },
+                  { name: 'Shoulder Press',
+                    description: 'Shoulder presses are a strength exercise that targets the shoulders and triceps.' },
+                  { name: 'Side Plank',
+                    description: 'Side planks are a core exercise that targets the oblique muscles.' },
+                  { name: 'Squat',
+                    description: 'Squats are a fundamental exercise for building leg strength and core stability.' },
+                  { name: 'Tricep Dip',
+                    description: 'Tricep dips are an effective exercise for strengthening the triceps and shoulders.' }
+                ])
