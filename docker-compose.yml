@@ -1,0 +1,15 @@
+---
+services:
+  db:
+    image: postgres:17.3-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: fitness_tracker
+      POSTGRES_PASSWORD: fitness_tracker
+      POSTGRES_DB: fitness_tracker_development
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
