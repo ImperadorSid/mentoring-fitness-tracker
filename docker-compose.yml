@@ -1,0 +1,14 @@
+---
+services:
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: fitness_tracker
+      POSTGRES_PASSWORD: fitness_tracker
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
